@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="functionality.js"></script>
+    <title>Title</title>
+</head>
+<body>
+   <b>Puzzle</b>
+   <button onclick="toggleState()"> Toggle Config Mode</button>
+   <div class="configState">
+   </div>
+   <br>
+   <br>
+   <button type="button" onclick="addButton()">+</button>
+   <button type="button" onclick="removeButton()">-</button>
+   <br>
+   <br>
+    <table class="buttons">
+        <tr>
+            <td>
+                <button type="button" id="0" onclick="onClick(this.id)">r</button>
+            </td>
+        </tr>
+    </table>
+<br>
+<br>
+<button type="button" onclick="getLog()">Get Actions Taken</button>
+<button type="button" onclick="clearLog()">Clear Actions Taken</button>
+</body>
+</html>
